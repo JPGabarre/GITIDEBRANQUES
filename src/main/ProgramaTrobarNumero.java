@@ -18,7 +18,6 @@ public class ProgramaTrobarNumero {
 				System.out.println("S'ha trobat el valor que busquem.");
 			}
 		}
-		
 	}
 
 }
