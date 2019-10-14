@@ -9,13 +9,15 @@ public class ProgramaTrobarNumero {
 		
 		Scanner lector = new Scanner(System.in);
 		
-		System.out.println("Introdueix el nombre que volem trobar repetit:");
+		System.out.println("Introdueix el nombre que volem trobar repetit, ha de ser parell:");
 		int nValor = lector.nextInt();
 		
 		for(int i = 0; i < 500000; i++) {
-			int numero = (int)(Math.random()*500000+1);
-			if(nValor == numero) {
-				System.out.println("S'ha trobat el valor que busquem.");
+			int numero = (int)(Math.random()*700000+1);
+			if (numero%2==0 && nValor%2==0) {
+				if(nValor == numero) {
+					System.out.println("S'ha trobat el valor que busquem.");
+				}
 			}
 		}
 	}
