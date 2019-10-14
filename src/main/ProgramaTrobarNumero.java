@@ -13,7 +13,7 @@ public class ProgramaTrobarNumero {
 		int nValor = lector.nextInt();
 		
 		for(int i = 0; i < 500000; i++) {
-			int numero = (int)(Math.random()*500000+1);
+			int numero = (int)(Math.random()*1000000+1);
 			if(nValor == numero) {
 				System.out.println("S'ha trobat el valor que busquem.");
 			}
