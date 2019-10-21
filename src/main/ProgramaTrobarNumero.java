@@ -12,7 +12,9 @@ public class ProgramaTrobarNumero {
 		System.out.println("Introdueix el nombre que volem trobar repetit, ha de ser parell:");
 		int nValor = lector.nextInt();
 		
-		for(int i = 0; i < 500000; i++) {
+		
+		//Aquesta es la branca temps
+		for(int i = 0; i < 7000; i++) {
 			int numero = (int)(Math.random()*1000000+1);
 			if(nValor == numero) {
 				System.out.println("S'ha trobat el valor que busquem.");
